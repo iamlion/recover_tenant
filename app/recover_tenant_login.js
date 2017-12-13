@@ -117,8 +117,19 @@ export default class Person extends React.Component {
                 </View>
                 <View
                     style={{
+                        marginTop:5,
+                        width:250,
+                        alignItems:"flex-end",
+                    }}
+                >
+                    <TextInput
+                        placeholder={"忘记密码?" }
+                    />
+                </View>
+                <View
+                    style={{
                         justifyContent:"center",
-                        marginTop:50,
+                        marginTop:45,
                         alignItems:"center",
 
                     }}
@@ -127,7 +138,7 @@ export default class Person extends React.Component {
                     <Image
                         style={{
                             width:300,
-                            height:60,
+                            height:80,
                             resizeMode:"stretch",
                         }}
                         source={require("./assets/icon5.png")}
@@ -139,15 +150,38 @@ export default class Person extends React.Component {
                             alignItems:"center",
                             position:"absolute",
                             backgroundColor:"transparent",
-                            fontSize:30,
+                            fontSize:25,
                             color:"#ffffff"
                         }}
                     >登录
                     </Text>
                 </View>
                 <View
+                style={{
+                    justifyContent:"center",
+                    alignItems:"center",
+                    width:280,
+                    height:50,
+                    backgroundColor:"#ffffff",
+                    borderRadius:30,
+                    overflow:"hidden",
+                    borderColor:"#8fd8bd",
+                    borderWidth:1,
+                }}
+                >
+                    <Text
+                        style={{
+                            justifyContent:"center",
+                            alignItems:"center",
+                            position:"absolute",
+                            backgroundColor:"transparent",
+                            fontSize:25,
+                            color:"#49bd90"
+                        }}
+                    >注册
+                    </Text>
+                </View>
 
-                ></View>
 
             </View>
 
