@@ -29,7 +29,9 @@ export default class extends React.Component {
 
         return (
             <View>
-                <Text>abcd</Text>
+                <Image
+                    source={require("./assets/icon6.png")}
+                />
             </View>
         )
     }
