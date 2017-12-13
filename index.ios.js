@@ -9,4 +9,4 @@ import {
 
 import App from './app/index';
 
-AppRegistry.registerComponent('recover_tenant', () => App);
+AppRegistry.registerComponent('MZCore', () => App);
