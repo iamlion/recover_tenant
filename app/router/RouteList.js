@@ -1,8 +1,15 @@
-import Test2 from '../test2';
+import React from 'react';
+import {
+    View,
+} from 'react-native';
+
+
+
+import LoginView from '../recover_tenant_login';
 
 export default  [
     {
-        screen: Test2,
-        routeNameKey : "testView"
+        screen: LoginView,
+        routeNameKey : "login"
     },
 ];
