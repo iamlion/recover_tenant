@@ -18,10 +18,6 @@ export default class extends React.Component {
 
 
     componentDidMount() {
-        this.props.navigation.navigate("login",null,{
-            animateStyle:"",
-            isAnimated:true
-        })
     }
 
 
