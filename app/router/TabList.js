@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
 });
 
 import TabMain from '../recover_tenant_main';
+import Mine from '../recover_tenant_mine';
 
 
 export default [
