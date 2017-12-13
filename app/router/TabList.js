@@ -5,7 +5,6 @@ import {
     Image
 } from 'react-native';
 
-import TestView from '../test1';
 
 
 const styles = StyleSheet.create({
@@ -16,11 +15,12 @@ const styles = StyleSheet.create({
     }
 });
 
+import TabMain from '../recover_tenant_main';
 
 
 export default [
     {
-        screen: TestView,
+        screen: TabMain,
         navigationOptions: {
             tabBarLabel: "回收",
             tabBarIcon: ({tintColor}) => (

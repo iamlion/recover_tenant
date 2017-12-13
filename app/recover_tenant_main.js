@@ -14,7 +14,10 @@ export default class extends React.Component {
 
 
     componentDidMount() {
-
+        this.props.navigation.navigate("login",null,{
+            animateStyle:"",
+            isAnimated:true
+        })
     }
 
 
@@ -24,6 +27,6 @@ export default class extends React.Component {
             <View>
                 <Text>abcd</Text>
             </View>
-        )
+            )
     }
 }
