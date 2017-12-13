@@ -241,11 +241,25 @@ export default class extends React.Component {
                                     height:35,
                                     width:"100%",
                                     backgroundColor:"#fff",
-
+                                    flexDirection:"row",
+                                    justifyContent:"center",
+                                    alignItems:"center"
                                 }}>
-
+                                    <Image
+                                        style={{
+                                            width:10,
+                                            height:18,
+                                            resizeMode:"stretch"
+                                        }}
+                                        source={require("./assets/messageIcon.png")}
+                                    />
+                                    <Text style={{
+                                        fontSize:12,
+                                        color:"#2d2d2d"
+                                    }}>
+                                        共有3个点要回收
+                                    </Text>
                                 </View>
-
                             </View>
                         )
                     }}
