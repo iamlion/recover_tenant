@@ -29,7 +29,7 @@ export default class extends React.Component {
 
         return (
             <View>
-                <Text>abcd</Text>
+                <Text>wef</Text>
             </View>
         )
     }

@@ -47,7 +47,7 @@ export default [
         routeNameKey : "ordering"
     },
     {
-        screen: View,
+        screen: Mine,
         navigationOptions: {
             tabBarLabel: "我的",
             tabBarIcon: ({tintColor}) => (
