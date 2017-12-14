@@ -158,7 +158,7 @@ export default class Person extends React.Component {
                     >登录
                     </Text>
                 </View>
-                <View
+       一天         <View
                 style={{
                     justifyContent:"center",
                     alignItems:"center",
