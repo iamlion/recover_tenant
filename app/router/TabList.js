@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
 
 import TabMain from '../recover_tenant_main';
 import Mine from '../recover_tenant_mine';
+import Doing from '../recover_tenant_doing';
 
 
 export default [
@@ -34,7 +35,7 @@ export default [
         routeNameKey : "recover"
     },
     {
-        screen: View,
+        screen: Doing,
         navigationOptions: {
             tabBarLabel: "正在回收",
             tabBarIcon: ({tintColor}) => (

@@ -2,7 +2,8 @@ import React from 'react';
 import {
     View,
     Image,
-    Text
+    Text,
+    TouchableOpacity
 } from 'react-native';
 
 
@@ -84,7 +85,11 @@ export default class extends React.Component {
 
                 </View>
 
-                <View
+                <TouchableOpacity
+                    activeOpacity={1}
+                    onPress={()=>{
+                        this.props.navigation.navigate("orders");
+                    }}
                     style={{
                         justifyContent:"center",
                         width:"100%",
@@ -114,7 +119,7 @@ export default class extends React.Component {
                         source={require("./assets/icon8.png")}
                     />
 
-                </View>
+                </TouchableOpacity>
                 <View
                     style={{
                         height:1,

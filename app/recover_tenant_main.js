@@ -142,233 +142,249 @@ export default class extends React.Component {
 
                 </View>
 
-                <TouchableOpacity
-                    onPress={()=>{
-                        this.props.navigation.navigate("recoverdetail")
-                    }}
-                    style={{
-
+                <View style={{
+                    height: 360
                 }}>
-                    <Text style={{
-                        fontSize:18,
-                        color:"#f0f"
-                    }}>回收</Text>
-                </TouchableOpacity>
-
-                <BaseListView
-                    renderRecommendItem={(item, idx) => {
-                        return (
-                            <View style={{
-                                paddingTop: 12,
-                                paddingBottom: 12,
-                                paddingLeft: 12,
-                                paddingRight: 12
-                            }}>
+                    <BaseListView
+                        renderRecommendItem={(item, idx) => {
+                            return (
                                 <View style={{
-                                    height: 102,
-                                    width: "100%",
-                                    backgroundColor: "#fff",
+                                    paddingTop: 12,
+                                    paddingBottom: 12,
+                                    paddingLeft: 12,
+                                    paddingRight: 12
                                 }}>
+                                    <View style={{
+                                        height: 102,
+                                        width: "100%",
+                                        backgroundColor: "#fff",
+                                    }}>
 
-                                    <View
-                                        style={{
-                                            flexDirection: "row",
-                                            alignItems: "center",
-                                            paddingTop: 6,
-                                            paddingBottom: 6,
-                                            height: 50,
-                                            width: "100%",
-                                            paddingLeft: 12,
-                                            paddingRight: 12,
-                                        }}>
-                                        <View style={{
-                                            height: 10,
-                                            width: 10,
-                                            borderRadius: 10 / 2,
-                                            overflow: "hidden",
-                                            backgroundColor: "#ed697f"
-                                        }}>
+                                        <View
+                                            style={{
+                                                flexDirection: "row",
+                                                alignItems: "center",
+                                                paddingTop: 6,
+                                                paddingBottom: 6,
+                                                height: 50,
+                                                width: "100%",
+                                                paddingLeft: 12,
+                                                paddingRight: 12,
+                                            }}>
+                                            <View style={{
+                                                height: 10,
+                                                width: 10,
+                                                borderRadius: 10 / 2,
+                                                overflow: "hidden",
+                                                backgroundColor: "#ed697f"
+                                            }}>
+
+                                            </View>
+                                            <Text style={{
+                                                fontSize: 14,
+                                                color: "#636363",
+                                                marginLeft: 8
+                                            }}>塑料瓶回收</Text>
 
                                         </View>
+                                        <Image
+                                            style={{
+                                                width: "100%",
+                                                height: 1,
+                                                tintColor: "#e2e2e2"
+                                            }}
+                                            source={require("./assets/dashline.png")}
+                                        />
+                                        <View
+                                            style={{
+                                                flexDirection: "row",
+                                                alignItems: "center",
+                                                paddingTop: 6,
+                                                paddingBottom: 6,
+                                                height: 50,
+                                                width: "100%",
+                                                paddingLeft: 12,
+                                                paddingRight: 12,
+                                            }}>
+
+                                            <View style={{
+                                                flexDirection: "row",
+                                                alignItems: "center",
+                                                flex: 0.5
+                                            }}>
+                                                <Text style={{
+                                                    fontSize: 14,
+                                                    color: "#535353"
+                                                }}>回收数量：</Text>
+                                                <Text style={{
+                                                    fontSize: 14,
+                                                    color: "#535353"
+                                                }}>0.4公斤</Text>
+                                            </View>
+
+                                            <View style={{
+                                                flexDirection: "row",
+                                                alignItems: "center",
+                                                flex: 0.5
+                                            }}>
+                                                <Text style={{
+                                                    fontSize: 14,
+                                                    color: "#535353"
+                                                }}>地址：</Text>
+                                                <Text style={{
+                                                    fontSize: 14,
+                                                    color: "#535353"
+                                                }}>国泰小区5栋8装</Text>
+                                            </View>
+                                        </View>
+
+                                    </View>
+                                </View>
+                            );
+                            // return (
+                            //     <View
+                            //         style={{
+                            //         padding: 12,
+                            //     }}>
+                            //         <TouchableOpacity
+                            //             activeOpacity={1}
+                            //             onPress={() => {
+                            //                 this.props.navigation.navigate("myOrderDetail",{
+                            //                     item:item
+                            //                 })
+                            //             }}
+                            //             style={{
+                            //                 flex: 1,
+                            //                 backgroundColor: "#fff",
+                            //                 borderRadius: 4,
+                            //                 overflow: "hidden",
+                            //                 paddingLeft: 12,
+                            //                 paddingRight: 12
+                            //             }}>
+                            //             <View
+                            //                 style={{
+                            //                     height: 55,
+                            //                     justifyContent: "center"
+                            //                 }}
+                            //             >
+                            //                 <Text style={{
+                            //                     fontSize: 15,
+                            //                     color: "#838383"
+                            //                 }}>订单编号:FX10000008687</Text>
+                            //                 {
+                            //                     this.renderStatus(item.status)
+                            //                 }
+                            //             </View>
+                            //             <View style={{
+                            //                 width: 20,
+                            //                 height: 20,
+                            //                 borderRadius: 20 / 2,
+                            //                 overflow: "hidden",
+                            //                 position: "absolute",
+                            //                 left: -10,
+                            //                 top: 45,
+                            //                 backgroundColor: "#e9e9e9"
+                            //             }}></View>
+                            //             <View style={{
+                            //                 width: 20,
+                            //                 height: 20,
+                            //                 borderRadius: 20 / 2,
+                            //                 overflow: "hidden",
+                            //                 position: "absolute",
+                            //                 right: -10,
+                            //                 top: 45,
+                            //                 backgroundColor: "#e9e9e9"
+                            //             }}></View>
+                            //             <Image
+                            //                 style={{
+                            //                     width: kScreenWidth - 48,
+                            //                     height: 1,
+                            //                     resizeMode: "stretch",
+                            //                     tintColor: "#9e9e9e"
+                            //                 }}
+                            //                 source={require("./assets/dashline.png")}
+                            //             />
+                            //             <View style={{
+                            //                 paddingTop: 12,
+                            //                 paddingBottom: 20
+                            //             }}>
+                            //                 <Text style={{
+                            //                     fontSize: 15,
+                            //                     color: "#838383"
+                            //                 }}>
+                            //                     备注：回收种类多，路程源回收种类多，路程源回收种类多，路程源回收种类多，路程源回收种类多，路程源
+                            //                 </Text>
+                            //             </View>
+                            //
+                            //         </TouchableOpacity>
+                            //
+                            //     </View>
+                            // )
+                        }}
+                        dataSource={this.state.dataSource}
+                        renderHeader={() => {
+                            return (
+                                <View style={{
+                                    paddingTop: 12,
+                                    paddingBottom: 12,
+                                    paddingLeft: 12,
+                                    paddingRight: 12
+                                }}>
+                                    <View style={{
+                                        height: 35,
+                                        width: "100%",
+                                        backgroundColor: "#fff",
+                                        flexDirection: "row",
+                                        justifyContent: "center",
+                                        alignItems: "center"
+                                    }}>
+                                        <Image
+                                            style={{
+                                                width: 13,
+                                                height: 18,
+                                                resizeMode: "stretch"
+                                            }}
+                                            source={require("./assets/messageIcon.png")}
+                                        />
                                         <Text style={{
                                             fontSize: 14,
-                                            color: "#636363",
+                                            color: "#4e4e4e",
                                             marginLeft: 8
-                                        }}>塑料瓶回收</Text>
-
+                                        }}>
+                                            共有3个点要回收
+                                        </Text>
                                     </View>
-                                    <Image
-                                        style={{
-                                            width:"100%",
-                                            height:1,
-                                            tintColor:"#e2e2e2"
-                                        }}
-                                        source={require("./assets/dashline.png")}
-                                    />
-                                    <View
-                                        style={{
-                                            flexDirection: "row",
-                                            alignItems: "center",
-                                            paddingTop: 6,
-                                            paddingBottom: 6,
-                                            height: 50,
-                                            width: "100%",
-                                            paddingLeft: 12,
-                                            paddingRight: 12,
-                                        }}>
-
-                                        <View style={{
-                                            flexDirection:"row",
-                                            alignItems:"center",
-                                            flex:0.5
-                                        }}>
-                                            <Text style={{
-                                                fontSize:14,
-                                                color:"#535353"
-                                            }}>回收数量：</Text>
-                                            <Text style={{
-                                                fontSize:14,
-                                                color:"#535353"
-                                            }}>0.4公斤</Text>
-                                        </View>
-
-                                        <View style={{
-                                            flexDirection:"row",
-                                            alignItems:"center",
-                                            flex:0.5
-                                        }}>
-                                            <Text style={{
-                                                fontSize:14,
-                                                color:"#535353"
-                                            }}>地址：</Text>
-                                            <Text style={{
-                                                fontSize:14,
-                                                color:"#535353"
-                                            }}>国泰小区5栋8装</Text>
-                                        </View>
-                                    </View>
-
                                 </View>
-                            </View>
-                        );
-                        // return (
-                        //     <View
-                        //         style={{
-                        //         padding: 12,
-                        //     }}>
-                        //         <TouchableOpacity
-                        //             activeOpacity={1}
-                        //             onPress={() => {
-                        //                 this.props.navigation.navigate("myOrderDetail",{
-                        //                     item:item
-                        //                 })
-                        //             }}
-                        //             style={{
-                        //                 flex: 1,
-                        //                 backgroundColor: "#fff",
-                        //                 borderRadius: 4,
-                        //                 overflow: "hidden",
-                        //                 paddingLeft: 12,
-                        //                 paddingRight: 12
-                        //             }}>
-                        //             <View
-                        //                 style={{
-                        //                     height: 55,
-                        //                     justifyContent: "center"
-                        //                 }}
-                        //             >
-                        //                 <Text style={{
-                        //                     fontSize: 15,
-                        //                     color: "#838383"
-                        //                 }}>订单编号:FX10000008687</Text>
-                        //                 {
-                        //                     this.renderStatus(item.status)
-                        //                 }
-                        //             </View>
-                        //             <View style={{
-                        //                 width: 20,
-                        //                 height: 20,
-                        //                 borderRadius: 20 / 2,
-                        //                 overflow: "hidden",
-                        //                 position: "absolute",
-                        //                 left: -10,
-                        //                 top: 45,
-                        //                 backgroundColor: "#e9e9e9"
-                        //             }}></View>
-                        //             <View style={{
-                        //                 width: 20,
-                        //                 height: 20,
-                        //                 borderRadius: 20 / 2,
-                        //                 overflow: "hidden",
-                        //                 position: "absolute",
-                        //                 right: -10,
-                        //                 top: 45,
-                        //                 backgroundColor: "#e9e9e9"
-                        //             }}></View>
-                        //             <Image
-                        //                 style={{
-                        //                     width: kScreenWidth - 48,
-                        //                     height: 1,
-                        //                     resizeMode: "stretch",
-                        //                     tintColor: "#9e9e9e"
-                        //                 }}
-                        //                 source={require("./assets/dashline.png")}
-                        //             />
-                        //             <View style={{
-                        //                 paddingTop: 12,
-                        //                 paddingBottom: 20
-                        //             }}>
-                        //                 <Text style={{
-                        //                     fontSize: 15,
-                        //                     color: "#838383"
-                        //                 }}>
-                        //                     备注：回收种类多，路程源回收种类多，路程源回收种类多，路程源回收种类多，路程源回收种类多，路程源
-                        //                 </Text>
-                        //             </View>
-                        //
-                        //         </TouchableOpacity>
-                        //
-                        //     </View>
-                        // )
-                    }}
-                    dataSource={this.state.dataSource}
-                    renderHeader={() => {
-                        return (
-                            <View style={{
-                                paddingTop: 12,
-                                paddingBottom: 12,
-                                paddingLeft: 12,
-                                paddingRight: 12
-                            }}>
-                                <View style={{
-                                    height: 35,
-                                    width: "100%",
-                                    backgroundColor: "#fff",
-                                    flexDirection: "row",
-                                    justifyContent: "center",
-                                    alignItems: "center"
-                                }}>
-                                    <Image
-                                        style={{
-                                            width: 13,
-                                            height: 18,
-                                            resizeMode: "stretch"
-                                        }}
-                                        source={require("./assets/messageIcon.png")}
-                                    />
-                                    <Text style={{
-                                        fontSize: 14,
-                                        color: "#4e4e4e",
-                                        marginLeft: 8
-                                    }}>
-                                        共有3个点要回收
-                                    </Text>
-                                </View>
-                            </View>
-                        )
-                    }}
-                />
+                            )
+                        }}
+                    />
+                </View>
 
+                <View
+                    style={{
+                        width: "100%",
+                        marginTop: 32,
+                        alignItems: "center"
+                    }}>
+                    <TouchableOpacity
+                        onPress={() => {
+                            this.props.navigation.navigate("recoverdetail")
+                        }}
+                        style={{
+                            width:170,
+                            height:44,
+                            borderRadius:44/2,
+                            backgroundColor:app_base_color,
+                            overflow:"hidden",
+                            justifyContent:"center",
+                            alignItems:"center"
+                        }}>
+                        <Text style={{
+                            fontSize: 18,
+                            color: "#fff"
+                        }}>回收</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
         )
     }
