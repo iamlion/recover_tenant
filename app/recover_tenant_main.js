@@ -142,6 +142,18 @@ export default class extends React.Component {
 
                 </View>
 
+                <TouchableOpacity
+                    onPress={()=>{
+                        this.props.navigation.navigate("recoverdetail")
+                    }}
+                    style={{
+
+                }}>
+                    <Text style={{
+                        fontSize:18,
+                        color:"#f0f"
+                    }}>回收</Text>
+                </TouchableOpacity>
 
                 <BaseListView
                     renderRecommendItem={(item, idx) => {
@@ -356,37 +368,6 @@ export default class extends React.Component {
                         )
                     }}
                 />
-
-
-                {/*<View*/}
-                    {/*style={{*/}
-                    {/*backgroundColor:"#f0f0f0",*/}
-                    {/*padding:20,*/}
-                    {/*marginTop:120*/}
-                {/*}}>*/}
-                    {/*<View style={{*/}
-                        {/*width:120,*/}
-                        {/*height:120,*/}
-                        {/*backgroundColor:"#f00",*/}
-                        {/*zIndex:9999*/}
-                    {/*}}>*/}
-
-                    {/*</View>*/}
-
-                    {/*<View style={{*/}
-                        {/*width:150,*/}
-                        {/*height:150,*/}
-                        {/*backgroundColor:"#f0f",*/}
-                        {/*position:"absolute",*/}
-                        {/*top:0,*/}
-                        {/*right:0,*/}
-                        {/*// right,*/}
-                        {/*// bottom:*/}
-                    {/*}}>*/}
-
-                    {/*</View>*/}
-                {/*</View>*/}
-
 
             </View>
         )
