@@ -28,7 +28,10 @@ export default class extends BaseComponent {
         return (
             <View>
                 {this.renderNavHeader("注册")}
-                <Text>忘记密码</Text>
+
+
+                <View></View>
+
             </View>
         )
     }
