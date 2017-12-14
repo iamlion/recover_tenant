@@ -1,12 +1,12 @@
 import React from'react';
-import{
+import {
     AppRegistry,
     View,
     Image,
     ActivityIndicator,
     TextInput,
-    Text
-}from 'react-native'
+    Text, Keyboard
+} from 'react-native'
 
 let viewBorderStyle = {
     borderWidth:1,
@@ -16,6 +16,8 @@ let viewBorderStyle = {
 
 
 export default class Person extends React.Component {
+
+
     render() {
         return (
             <View
