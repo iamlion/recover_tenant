@@ -14,7 +14,6 @@ import {
 
 import BaseComponent from './baseComponent';
 import BaseListView from './baseListComponent';
-import DashLine from './lib/dashline';
 
 export default class extends BaseComponent {
 
