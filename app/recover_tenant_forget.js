@@ -9,8 +9,9 @@ import {
 /**
  * 忘记密码
  * */
+import BaseComponent from './baseComponent'
 
-export default class extends React.Component {
+export default class extends BaseComponent {
 
     constructor(props){
         super(props);
@@ -18,10 +19,7 @@ export default class extends React.Component {
 
 
     componentDidMount() {
-        this.props.navigation.navigate("login",null,{
-            animateStyle:"",
-            isAnimated:true
-        })
+
     }
 
 
@@ -29,6 +27,7 @@ export default class extends React.Component {
 
         return (
             <View>
+                {this.renderNavHeader("忘记密码")}
                 <Text>忘记密码</Text>
             </View>
         )

@@ -5,7 +5,9 @@ import {
     Image,
     ActivityIndicator,
     TextInput,
-    Text, Keyboard
+    Text,
+    Keyboard,
+    TouchableOpacity
 } from 'react-native'
 
 let viewBorderStyle = {
@@ -122,13 +124,21 @@ export default class Person extends React.Component {
                         alignItems: "flex-end",
                     }}
                 >
-                    <Text
-                        style={{
-                            color: "#c3c3c3"
+
+                    <TouchableOpacity
+                        activeOpacity={1}
+                        onPress={()=>{
+                            this.props.navigation.navigate("forget");
                         }}
                     >
-                        忘记密码?
-                    </Text>
+                        <Text
+                            style={{
+                                color: "#c3c3c3"
+                            }}
+                        >
+                            忘记密码?
+                        </Text>
+                    </TouchableOpacity>
                 </View>
                 <View
                     style={{
@@ -160,7 +170,11 @@ export default class Person extends React.Component {
                     >登录
                     </Text>
                 </View>
-                <View
+                <TouchableOpacity
+                    activeOpacity={1}
+                    onPress={()=>{
+                        this.props.navigation.navigate("register");
+                    }}
                     style={{
                         justifyContent: "center",
                         alignItems: "center",
@@ -184,7 +198,7 @@ export default class Person extends React.Component {
                         }}
                     >注册
                     </Text>
-                </View>
+                </TouchableOpacity>
 
 
             </View>
