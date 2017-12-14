@@ -124,9 +124,13 @@ export default class Person extends React.Component {
                         alignItems:"flex-end",
                     }}
                 >
-                    <TextInput
-                        placeholder={"忘记密码?" }
-                    />
+                    <Text
+                    style={{
+                        color:"#c3c3c3"
+                    }}
+                    >
+                        忘记密码?
+                    </Text>
                 </View>
                 <View
                     style={{
