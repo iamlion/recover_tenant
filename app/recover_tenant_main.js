@@ -69,12 +69,12 @@ export default class extends React.Component {
 
                 <View
                     style={{
-                    height: Platform.select({android: 44, ios: 64}),
-                    paddingTop: 20,
-                    backgroundColor: "#fff",
-                    alignItems: "center",
-                    justifyContent: "center"
-                }}>
+                        height: Platform.select({android: 44, ios: 64}),
+                        paddingTop: 20,
+                        backgroundColor: "#fff",
+                        alignItems: "center",
+                        justifyContent: "center"
+                    }}>
                     <Text style={{
                         fontSize: 18,
                         color: app_base_color,
@@ -86,56 +86,56 @@ export default class extends React.Component {
                     style={{
                         height: 40,
                         width: "100%",
-                        backgroundColor:"#fff",
-                        flexDirection:"row",
-                        alignItems:"center"
+                        backgroundColor: "#fff",
+                        flexDirection: "row",
+                        alignItems: "center"
                     }}>
 
                     <TouchableOpacity
                         activeOpacity={1}
-                        onPress={()=>{
+                        onPress={() => {
                             this.setState({
-                                selectIdx:0
+                                selectIdx: 0
                             });
                         }}
                         style={{
-                            height:40,
-                            flex:0.5,
-                            justifyContent:"center",
-                            alignItems:"center"
+                            height: 40,
+                            flex: 0.5,
+                            justifyContent: "center",
+                            alignItems: "center"
                         }}
                     >
                         <Text style={[{
-                            fontSize:16,
+                            fontSize: 16,
 
-                        },{
-                            color:this.state.selectIdx == 0?app_base_color:"#5e5e5e"
+                        }, {
+                            color: this.state.selectIdx == 0 ? app_base_color : "#5e5e5e"
                         }]}>送到回收站</Text>
                     </TouchableOpacity>
                     <View style={{
-                        height:24,
-                        width:1,
-                        backgroundColor:app_base_color
+                        height: 24,
+                        width: 1,
+                        backgroundColor: app_base_color
                     }}></View>
                     <TouchableOpacity
                         activeOpacity={1}
-                        onPress={()=>{
+                        onPress={() => {
                             this.setState({
-                                selectIdx:1
+                                selectIdx: 1
                             });
                         }}
                         style={{
-                            height:40,
-                            flex:0.5,
-                            justifyContent:"center",
-                            alignItems:"center"
+                            height: 40,
+                            flex: 0.5,
+                            justifyContent: "center",
+                            alignItems: "center"
                         }}
                     >
                         <Text style={[{
-                            fontSize:16,
+                            fontSize: 16,
 
-                        },{
-                            color:this.state.selectIdx == 1?app_base_color:"#5e5e5e"
+                        }, {
+                            color: this.state.selectIdx == 1 ? app_base_color : "#5e5e5e"
                         }]}>预约上门</Text>
                     </TouchableOpacity>
 
@@ -146,7 +146,98 @@ export default class extends React.Component {
                 <BaseListView
                     renderRecommendItem={(item, idx) => {
                         return (
-                            <View></View>
+                            <View style={{
+                                paddingTop: 12,
+                                paddingBottom: 12,
+                                paddingLeft: 12,
+                                paddingRight: 12
+                            }}>
+                                <View style={{
+                                    height: 102,
+                                    width: "100%",
+                                    backgroundColor: "#fff",
+                                }}>
+
+                                    <View
+                                        style={{
+                                            flexDirection: "row",
+                                            alignItems: "center",
+                                            paddingTop: 6,
+                                            paddingBottom: 6,
+                                            height: 50,
+                                            width: "100%",
+                                            paddingLeft: 12,
+                                            paddingRight: 12,
+                                        }}>
+                                        <View style={{
+                                            height: 10,
+                                            width: 10,
+                                            borderRadius: 10 / 2,
+                                            overflow: "hidden",
+                                            backgroundColor: "#ed697f"
+                                        }}>
+
+                                        </View>
+                                        <Text style={{
+                                            fontSize: 14,
+                                            color: "#636363",
+                                            marginLeft: 8
+                                        }}>塑料瓶回收</Text>
+
+                                    </View>
+                                    <Image
+                                        style={{
+                                            width:"100%",
+                                            height:1,
+                                            tintColor:"#e2e2e2"
+                                        }}
+                                        source={require("./assets/dashline.png")}
+                                    />
+                                    <View
+                                        style={{
+                                            flexDirection: "row",
+                                            alignItems: "center",
+                                            paddingTop: 6,
+                                            paddingBottom: 6,
+                                            height: 50,
+                                            width: "100%",
+                                            paddingLeft: 12,
+                                            paddingRight: 12,
+                                        }}>
+
+                                        <View style={{
+                                            flexDirection:"row",
+                                            alignItems:"center",
+                                            flex:0.5
+                                        }}>
+                                            <Text style={{
+                                                fontSize:14,
+                                                color:"#535353"
+                                            }}>回收数量：</Text>
+                                            <Text style={{
+                                                fontSize:14,
+                                                color:"#535353"
+                                            }}>0.4公斤</Text>
+                                        </View>
+
+                                        <View style={{
+                                            flexDirection:"row",
+                                            alignItems:"center",
+                                            flex:0.5
+                                        }}>
+                                            <Text style={{
+                                                fontSize:14,
+                                                color:"#535353"
+                                            }}>地址：</Text>
+                                            <Text style={{
+                                                fontSize:14,
+                                                color:"#535353"
+                                            }}>国泰小区5栋8装</Text>
+                                        </View>
+                                    </View>
+
+                                </View>
+                            </View>
                         );
                         // return (
                         //     <View
@@ -229,33 +320,34 @@ export default class extends React.Component {
                         // )
                     }}
                     dataSource={this.state.dataSource}
-                    renderHeader={()=>{
+                    renderHeader={() => {
                         return (
                             <View style={{
-                                paddingTop:12,
-                                paddingBottom:12,
-                                paddingLeft:12,
-                                paddingRight:12
+                                paddingTop: 12,
+                                paddingBottom: 12,
+                                paddingLeft: 12,
+                                paddingRight: 12
                             }}>
                                 <View style={{
-                                    height:35,
-                                    width:"100%",
-                                    backgroundColor:"#fff",
-                                    flexDirection:"row",
-                                    justifyContent:"center",
-                                    alignItems:"center"
+                                    height: 35,
+                                    width: "100%",
+                                    backgroundColor: "#fff",
+                                    flexDirection: "row",
+                                    justifyContent: "center",
+                                    alignItems: "center"
                                 }}>
                                     <Image
                                         style={{
-                                            width:10,
-                                            height:18,
-                                            resizeMode:"stretch"
+                                            width: 13,
+                                            height: 18,
+                                            resizeMode: "stretch"
                                         }}
                                         source={require("./assets/messageIcon.png")}
                                     />
                                     <Text style={{
-                                        fontSize:12,
-                                        color:"#2d2d2d"
+                                        fontSize: 14,
+                                        color: "#4e4e4e",
+                                        marginLeft: 8
                                     }}>
                                         共有3个点要回收
                                     </Text>
@@ -264,6 +356,37 @@ export default class extends React.Component {
                         )
                     }}
                 />
+
+
+                {/*<View*/}
+                    {/*style={{*/}
+                    {/*backgroundColor:"#f0f0f0",*/}
+                    {/*padding:20,*/}
+                    {/*marginTop:120*/}
+                {/*}}>*/}
+                    {/*<View style={{*/}
+                        {/*width:120,*/}
+                        {/*height:120,*/}
+                        {/*backgroundColor:"#f00",*/}
+                        {/*zIndex:9999*/}
+                    {/*}}>*/}
+
+                    {/*</View>*/}
+
+                    {/*<View style={{*/}
+                        {/*width:150,*/}
+                        {/*height:150,*/}
+                        {/*backgroundColor:"#f0f",*/}
+                        {/*position:"absolute",*/}
+                        {/*top:0,*/}
+                        {/*right:0,*/}
+                        {/*// right,*/}
+                        {/*// bottom:*/}
+                    {/*}}>*/}
+
+                    {/*</View>*/}
+                {/*</View>*/}
+
 
             </View>
         )
