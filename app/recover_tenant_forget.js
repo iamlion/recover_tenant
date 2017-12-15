@@ -28,6 +28,12 @@ export default class extends BaseComponent {
     render(){
 
         return (
+            <ScrollView
+            style={{
+                backgroundColor:'#ffffff'
+            }}
+            >
+
             <View>
                 {this.renderNavHeader("忘记密码")}
 
@@ -42,10 +48,10 @@ export default class extends BaseComponent {
                     <TextInput
                         placeholder={'请输入手机号'}
                         style={{
-                            fontSize:17,
+                            fontSize:16,
                             color:'#959595',
                             marginTop:70,
-                            marginRight:150,
+                            marginRight:170,
                         }}
                     />
                     <View
@@ -67,18 +73,18 @@ export default class extends BaseComponent {
                     <TextInput
                         placeholder={'请输入验证码'}
                         style={{
-                            fontSize:17,
+                            fontSize:16,
                             color:'#959595',
                             paddingTop:50,
-                            paddingRight:33,
                         }}
                     />
 
                     <TextInput
                         placeholder={'获取验证码'}
                         style={{
+                            fontSize:14,
                             paddingTop:50,
-                            paddingLeft:30,
+                            marginLeft:100,
                             color:'#bcbcbc'
                         }}
                     />
@@ -104,8 +110,8 @@ export default class extends BaseComponent {
                         <TextInput
                             placeholder={'请输入新密码'}
                             style={{
-                                fontSize:17,
-                                marginRight:55,
+                                fontSize:16,
+                                marginRight:75,
                                 color:'#959595'
                             }}
                         />
@@ -137,8 +143,8 @@ export default class extends BaseComponent {
                         <TextInput
                             placeholder={'请重新输入新密码'}
                             style={{
-                                fontSize:17,
-                                marginRight:40,
+                                fontSize:16,
+                                marginRight:60,
                                 color:'#959595'
                             }}
                         />
@@ -201,6 +207,8 @@ export default class extends BaseComponent {
                 </ScrollView>
 
             </View>
+
+            </ScrollView>
 
         )
     }
