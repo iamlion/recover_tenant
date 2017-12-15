@@ -15,7 +15,7 @@ import {
 
 export default class extends React.Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
     }
 
@@ -28,7 +28,7 @@ export default class extends React.Component {
     }
 
 
-    render(){
+    render() {
 
         return (
             <ScrollView
@@ -71,7 +71,6 @@ export default class extends React.Component {
                             paddingLeft:10,
                         }}>
                         修改密码
-
                     </Text>
 
                     <Image
@@ -90,23 +89,23 @@ export default class extends React.Component {
                     </View>
                     <View
                         style={{
-                            height:1,
-                            backgroundColor:"#d9d9d9",
-                            width:"100%",
+                            height: 1,
+                            backgroundColor: "#d9d9d9",
+                            width: "100%",
                         }}
                     >
                 </View>
 
                 <TouchableOpacity
                     activeOpacity={1}
-                    onPress={()=>{
+                    onPress={() => {
                         this.props.navigation.navigate("orders");
                     }}
                     style={{
-                        justifyContent:"center",
-                        width:"100%",
-                        height:60,
-                        textAlign:"left",
+                        justifyContent: "center",
+                        width: "100%",
+                        height: 60,
+                        textAlign: "left",
                     }}
 
                 >
@@ -136,9 +135,9 @@ export default class extends React.Component {
                 </TouchableOpacity>
                 <View
                     style={{
-                        height:1,
-                        backgroundColor:"#d9d9d9",
-                        width:"100%",
+                        height: 1,
+                        backgroundColor: "#d9d9d9",
+                        width: "100%",
                     }}
                 >
 
@@ -146,10 +145,10 @@ export default class extends React.Component {
 
                 <View
                     style={{
-                        justifyContent:"center",
-                        width:"100%",
-                        height:60,
-                        textAlign:"left",
+                        justifyContent: "center",
+                        width: "100%",
+                        height: 60,
+                        textAlign: "left",
                     }}
 
                 >
@@ -179,9 +178,9 @@ export default class extends React.Component {
 
                 <View
                     style={{
-                        height:1,
-                        backgroundColor:"#d9d9d9",
-                        width:"100%",
+                        height: 1,
+                        backgroundColor: "#d9d9d9",
+                        width: "100%",
                     }}
                 >
 
@@ -197,8 +196,8 @@ export default class extends React.Component {
                 >
                     <Image
                         style={{
-                            width:150,
-                            height:150,
+                            width: 150,
+                            height: 150,
                         }}
 
                         source={require("./assets/icon6.png")}
@@ -213,7 +212,6 @@ export default class extends React.Component {
                     >
                         Adrienne
                     </Text>
-
 
 
                 </View>
