@@ -5,6 +5,7 @@ import {
     Text,
     TouchableOpacity,
     TextInput,
+    ScrollView,
 } from 'react-native';
 
 
@@ -30,9 +31,16 @@ export default class extends React.Component {
     render(){
 
         return (
+            <ScrollView
+             style={{
+                 backgroundColor:"#ffffff",
+             }}
+            >
+
             <View
                style={{
-                    justifyContent:"center",
+                   flex:1,
+                   justifyContent:"center",
                    alignItems:"center",
                }}
             >
@@ -40,13 +48,15 @@ export default class extends React.Component {
                 <Image
                     style={{
                         width:"100%",
-                        height:350,
+                        height:300,
+                        resizeMode: "stretch",
                     }}
                     source={require("./assets/icon7.png")}
                 />
 
                 <View
                    style={{
+                       marginTop:30,
                        justifyContent:"center",
                        width:"100%",
                        height:60,
@@ -54,28 +64,30 @@ export default class extends React.Component {
                    }}
 
                 >
-                    <TextInput
+                    <Text
                         style={{
-                            color:"#676767",
-                            fontSize:20,
+                            color:"#787878",
+                            fontSize:17,
                             paddingLeft:10,
-                        }}
-                        placeholder={"修改密码"}/*当没有任何文字输入时，显示此字符串*/
+                        }}>
+                        修改密码
 
-                    />
+                    </Text>
 
                     <Image
                         style={{
-                            alignItems:"center",
-                            justifyContent:"center",
+                            tintColor:"#bebebe",
                             width:15,
                             height:15,
                             position:"absolute",
-                            right:0,
+                            right:10,
                             Top:0,
                         }}
                         source={require("./assets/icon8.png")}
                     />
+
+
+                    </View>
                     <View
                         style={{
                             height:1,
@@ -83,9 +95,6 @@ export default class extends React.Component {
                             width:"100%",
                         }}
                     >
-
-                    </View>
-
                 </View>
 
                 <TouchableOpacity
@@ -101,23 +110,25 @@ export default class extends React.Component {
                     }}
 
                 >
-                    <TextInput
+                    <Text
                         style={{
-                            color:"#676767",
-                            fontSize:20,
+                            color:"#787878",
+                            fontSize:17,
                             paddingLeft:10,
-                        }}
-                        placeholder={"我的回收"}/*当没有任何文字输入时，显示此字符串*/
+                        }}>
+                        我的回收
 
-                    />
+                    </Text>
 
                     <Image
                         style={{
-                            width:15,
+                            tintColor:"#bebebe",
+                            width:15    ,
                             height:15,
                             position:"absolute",
-                            right:0,
+                            right:10,
                             Top:0,
+
                         }}
                         source={require("./assets/icon8.png")}
                     />
@@ -143,22 +154,22 @@ export default class extends React.Component {
 
                 >
 
-                    <TextInput
+                    <Text
                         style={{
-                            color:"#676767",
-                            fontSize:20,
+                            color:"#787878",
+                            fontSize:17,
                             paddingLeft:10,
-                        }}
-                        placeholder={"退出登录"}/*当没有任何文字输入时，显示此字符串*/
+                        }}>
+                     退出登录
 
-                    />
-
+                    </Text>
                     <Image
                         style={{
+                            tintColor:"#bebebe",
                             width:15,
                             height:15,
                             position:"absolute",
-                            right:0,
+                            right:10,
                             Top:0,
                         }}
                         source={require("./assets/icon8.png")}
@@ -175,22 +186,13 @@ export default class extends React.Component {
                 >
 
                 </View>
-                <View
-                    style={{
-                        height:1,
-                        backgroundColor:"#d9d9d9",
-                        width:"100%",
-                    }}
-                >
-
-                </View>
 
                 <View
                      style={{
                          justifyContent:"center",
                          alignItems:"center",
                          position:"absolute",
-                         top:100,
+                         top:70,
                      }}
                 >
                     <Image
@@ -203,7 +205,7 @@ export default class extends React.Component {
                     />
                     <Text
                         style={{
-                            marginTop:15,
+                            marginTop:10,
                             backgroundColor:"transparent",
                             color:"#ffffff",
                             fontSize:25,
@@ -216,6 +218,7 @@ export default class extends React.Component {
 
                 </View>
             </View>
+            </ScrollView>
         )
     }
 }
