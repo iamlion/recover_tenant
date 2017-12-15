@@ -28,16 +28,15 @@ export default class extends BaseComponent {
     render(){
 
         return (
-            <ScrollView
-                style={{
-                    backgroundColor:'#ffffff',
 
-                }}
-
-
-            >
             <View>
                 {this.renderNavHeader("注册")}
+                <ScrollView
+                    style={{
+                        backgroundColor:'#ffffff',
+                        height:'100%'
+                    }}
+                >
 
 
                     <View
@@ -79,15 +78,15 @@ export default class extends BaseComponent {
                                 }}
                             />
 
-                            <TextInput
-                                placeholder={'获取验证码'}
+                            <Text
                                 style={{
                                     fontSize:13,
                                     paddingTop:48,
                                     paddingLeft:45,
                                     color:'#bcbcbc'
                                 }}
-                            />
+                            >获取验证码</Text>
+
                         </View>
 
                         <View
@@ -164,9 +163,9 @@ export default class extends BaseComponent {
                         </View>
 
                     </View>
-
+                </ScrollView>
             </View>
-    </ScrollView>
+
         )
     }
 }
