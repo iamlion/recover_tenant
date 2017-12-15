@@ -28,10 +28,18 @@ export default class extends BaseComponent {
     render(){
 
         return (
+            <ScrollView
+                style={{
+                    backgroundColor:'#ffffff',
+
+                }}
+
+
+            >
             <View>
                 {this.renderNavHeader("注册")}
 
-                <ScrollView>
+
                     <View
                     style={{
                         alignItems:'center',
@@ -40,10 +48,10 @@ export default class extends BaseComponent {
                     <TextInput
                         placeholder={'请输入手机号'}
                         style={{
-                            fontSize:17,
+                            fontSize:16,
                             color:'#959595',
                             marginTop:70,
-                            marginRight:150,
+                            marginRight:170,
                         }}
                     />
                     <View
@@ -64,18 +72,19 @@ export default class extends BaseComponent {
                             <TextInput
                                 placeholder={'请输入验证码'}
                                 style={{
-                                    fontSize:17,
+                                    fontSize:16,
                                     color:'#959595',
-                                    paddingTop:50,
-                                    paddingRight:33,
+                                    paddingTop:45,
+                                    paddingRight:60,
                                 }}
                             />
 
                             <TextInput
                                 placeholder={'获取验证码'}
                                 style={{
-                                    paddingTop:50,
-                                    paddingLeft:30,
+                                    fontSize:13,
+                                    paddingTop:48,
+                                    paddingLeft:45,
                                     color:'#bcbcbc'
                                 }}
                             />
@@ -101,9 +110,8 @@ export default class extends BaseComponent {
                             <TextInput
                                 placeholder={'请输入密码'}
                                 style={{
-                                    fontSize:17,
-                                    marginRight:62,
-                                    color:'#959595'
+                                    fontSize:16,
+                                    marginRight:82,
                                 }}
                             />
                             <Image
@@ -156,9 +164,9 @@ export default class extends BaseComponent {
                         </View>
 
                     </View>
-                </ScrollView>
 
             </View>
+    </ScrollView>
         )
     }
 }
