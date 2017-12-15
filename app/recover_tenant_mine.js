@@ -3,7 +3,8 @@ import {
     View,
     Image,
     Text,
-    TouchableOpacity
+    TouchableOpacity,
+    TextInput,
 } from 'react-native';
 
 
@@ -53,18 +54,20 @@ export default class extends React.Component {
                    }}
 
                 >
-                    <Text
+                    <TextInput
                         style={{
                             color:"#676767",
                             fontSize:20,
-
+                            paddingLeft:10,
                         }}
-                    >
-                        修改密码
-                    </Text>
+                        placeholder={"修改密码"}/*当没有任何文字输入时，显示此字符串*/
+
+                    />
 
                     <Image
                         style={{
+                            alignItems:"center",
+                            justifyContent:"center",
                             width:15,
                             height:15,
                             position:"absolute",
@@ -98,15 +101,15 @@ export default class extends React.Component {
                     }}
 
                 >
-                    <Text
+                    <TextInput
                         style={{
                             color:"#676767",
                             fontSize:20,
-
+                            paddingLeft:10,
                         }}
-                    >
-                     我的回收
-                    </Text>
+                        placeholder={"我的回收"}/*当没有任何文字输入时，显示此字符串*/
+
+                    />
 
                     <Image
                         style={{
@@ -139,15 +142,16 @@ export default class extends React.Component {
                     }}
 
                 >
-                    <Text
+
+                    <TextInput
                         style={{
                             color:"#676767",
                             fontSize:20,
-
+                            paddingLeft:10,
                         }}
-                    >
-                        退出登录
-                    </Text>
+                        placeholder={"退出登录"}/*当没有任何文字输入时，显示此字符串*/
+
+                    />
 
                     <Image
                         style={{
